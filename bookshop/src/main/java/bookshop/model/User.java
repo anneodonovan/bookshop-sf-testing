@@ -1,40 +1,36 @@
 package bookshop.model;
 
+/**
+ * Represents a system user (staff or manager).
+ */
 public class User {
-    private String id;
-    private String name;
-    private String email;
 
-    public User() {
+    public enum Role { STAFF, MANAGER }
+
+    private String username;
+    private String passwordHash; // Store hashed passwords — never plain text
+    private Role role;
+
+    public User(String username, String passwordHash, Role role) {
+        this.username = username;
+        this.passwordHash = passwordHash;
+        this.role = role;
     }
 
-    public User(String id, String name, String email) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
+    public String getUsername()     { return username; }
+    public String getPasswordHash() { return passwordHash; }
+    public Role getRole()           { return role; }
+
+    public boolean isManager() { return role == Role.MANAGER; }
+
+    /** CSV format: username,passwordHash,role */
+    public String toCsvRow() {
+        return String.join(",", username, passwordHash, role.name());
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+    public static User fromCsvRow(String csvRow) {
+        String[] p = csvRow.split(",", -1);
+        if (p.length < 3) throw new IllegalArgumentException("Invalid User CSV row: " + csvRow);
+        return new User(p[0].trim(), p[1].trim(), Role.valueOf(p[2].trim()));
     }
 }

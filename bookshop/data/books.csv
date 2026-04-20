@@ -1,2 +1,31 @@
-isbn,title,author,price,stock
-978-1234567897,Example Book,Author Name,12.99,10
+title,author,isbn,barcode,price,weightGrams,stockCount
+The Hobbit,J.R.R. Tolkien,9780261102217,HOB001,9.99,320.0,10
+1984,George Orwell,9780451524935,ORW001,7.50,200.0,8
+Dune,Frank Herbert,9780340960196,DUN001,8.99,450.0,5
+Emma,Jane Austen,9780141439587,AUS001,5.99,240.0,12
+The Great Gatsby,F. Scott Fitzgerald,9780743273565,GAT001,8.49,180.0,7
+To Kill a Mockingbird,Harper Lee,9780061935466,MOC001,9.49,310.0,6
+Pride and Prejudice,Jane Austen,9780141439518,PRI001,5.99,230.0,14
+The Catcher in the Rye,J.D. Salinger,9780316769174,CAT001,8.99,220.0,9
+Brave New World,Aldous Huxley,9780060850524,BNW001,8.49,260.0,4
+The Lord of the Rings,J.R.R. Tolkien,9780261102385,LOR001,24.99,1050.0,3
+Harry Potter and the Philosophers Stone,J.K. Rowling,9780747532743,HP1001,10.99,340.0,15
+Harry Potter and the Chamber of Secrets,J.K. Rowling,9780747538493,HP2001,10.99,360.0,11
+Harry Potter and the Prisoner of Azkaban,J.K. Rowling,9780747542155,HP3001,10.99,380.0,13
+The Alchemist,Paulo Coelho,9780062315007,ALC001,9.99,210.0,8
+Crime and Punishment,Fyodor Dostoevsky,9780143107637,CRI001,11.99,520.0,4
+The Picture of Dorian Gray,Oscar Wilde,9780141439570,DOR001,6.99,200.0,9
+Frankenstein,Mary Shelley,9780141439471,FRA001,6.49,190.0,7
+Dracula,Bram Stoker,9780141439846,DRA001,7.49,280.0,6
+The Odyssey,Homer,9780140268867,ODY001,10.49,380.0,5
+Wuthering Heights,Emily Bronte,9780141439556,WUT001,6.99,260.0,10
+The Shining,Stephen King,9780307743657,SHI001,12.99,480.0,8
+It,Stephen King,9781501156700,ITS001,15.99,1100.0,4
+The Da Vinci Code,Dan Brown,9780307474278,DAV001,9.99,420.0,6
+Gone Girl,Gillian Flynn,9780307588371,GON001,9.49,360.0,7
+The Girl with the Dragon Tattoo,Stieg Larsson,9780307949486,GIR001,10.99,490.0,5
+Atomic Habits,James Clear,9780735211292,ATO001,16.99,310.0,12
+Sapiens,Yuval Noah Harari,9780062316097,SAP001,14.99,520.0,9
+A Brief History of Time,Stephen Hawking,9780553380163,ABH001,12.99,290.0,6
+The Diary of a Young Girl,Anne Frank,9780553296983,DIA001,8.99,250.0,8
+Meditations,Marcus Aurelius,9780140449334,MED001,7.99,190.0,11
