@@ -1,13 +1,13 @@
 package bookshop.service;
 
-import bookshop.model.Book;
-import bookshop.util.CsvUtil;
-import bookshop.util.IsbnValidator;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+
+import bookshop.model.Book;
+import bookshop.util.CsvUtil;
+import bookshop.util.IsbnValidator;
 
 /**
  * Manages the book inventory. Reads/writes to books.csv.
@@ -30,6 +30,16 @@ public class InventoryService {
             books.add(Book.fromCsvRow(line));
         }
         return books;
+    }
+
+    /** Get total stock count across all books. */
+    public int getStockCount() throws IOException {
+        int total = 0;
+        for (String line : CsvUtil.readLines(csvPath)) {
+            Book b = Book.fromCsvRow(line);
+            total += b.getStockCount();
+        }
+        return total;
     }
 
     /** Finds a book by its barcode. Returns empty if not found. */
