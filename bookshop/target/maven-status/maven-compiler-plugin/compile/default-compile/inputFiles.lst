@@ -1,0 +1,11 @@
+/home/anneo/bookshop-sf-testing/bookshop/src/main/java/bookshop/model/Book.java
+/home/anneo/bookshop-sf-testing/bookshop/src/main/java/bookshop/model/SaleItem.java
+/home/anneo/bookshop-sf-testing/bookshop/src/main/java/bookshop/service/SalesService.java
+/home/anneo/bookshop-sf-testing/bookshop/src/main/java/bookshop/service/PostageService.java
+/home/anneo/bookshop-sf-testing/bookshop/src/main/java/bookshop/service/AuthService.java
+/home/anneo/bookshop-sf-testing/bookshop/src/main/java/bookshop/util/IsbnValidator.java
+/home/anneo/bookshop-sf-testing/bookshop/src/main/java/bookshop/service/PaymentService.java
+/home/anneo/bookshop-sf-testing/bookshop/src/main/java/bookshop/service/InventoryService.java
+/home/anneo/bookshop-sf-testing/bookshop/src/main/java/bookshop/util/CsvUtil.java
+/home/anneo/bookshop-sf-testing/bookshop/src/main/java/bookshop/model/Sale.java
+/home/anneo/bookshop-sf-testing/bookshop/src/main/java/bookshop/model/User.java

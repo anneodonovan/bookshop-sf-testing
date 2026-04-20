@@ -1,0 +1,14 @@
+bookshop/model/User$Role.class
+bookshop/service/PaymentService$PaymentResult.class
+bookshop/model/Sale.class
+bookshop/model/User.class
+bookshop/service/PostageService.class
+bookshop/service/PaymentService.class
+bookshop/model/Book.class
+bookshop/service/AuthService.class
+bookshop/util/IsbnValidator.class
+bookshop/service/SalesService.class
+bookshop/service/InventoryService.class
+bookshop/model/SaleItem.class
+bookshop/model/Sale$PaymentMethod.class
+bookshop/util/CsvUtil.class
