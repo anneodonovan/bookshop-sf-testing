@@ -1,1 +1,6 @@
+bookshop/PostageServiceTest.class
+bookshop/IsbnValidatorTest.class
+bookshop/SalesServiceTest.class
+bookshop/BookTest.class
+bookshop/InventoryServiceTest.class
 bookshop/AuthServiceTest.class
