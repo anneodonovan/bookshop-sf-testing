@@ -18,9 +18,6 @@ public class IsbnValidatorTest {
     //13 Lenght IsBns
     @ParameterizedTest
     @ValueSource(strings = {"9780261102217","9780307887436", "978-0-26-110221-7"})
-    public void IsbnTestLenght(String testValue) {
-            assertEquals(testValue.length(), 13);
-    }
 
     public void IsbnTestVal(String testValue) {
         assertTrue(IsbnValidator.isValid(testValue));
@@ -39,9 +36,6 @@ public class IsbnValidatorTest {
     //10 Lenght IsBns
     @ParameterizedTest
     @ValueSource(strings = {"0330258648","0399208534", "0-399-20853-4"})
-    public void IsbnTestLenghtTen(String testValue) {
-            assertEquals(testValue.length(), 10);
-    }
 
     public void IsbnTestValTen(String testValue) {
         assertTrue(IsbnValidator.isValid(testValue));
